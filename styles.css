@@ -1,66 +1,110 @@
-body{
+body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 90%);
-
-
 }
-#calculator{
+
+#calculator {
     font-family: Arial, Helvetica, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 20px;
     max-width: 500px;
     overflow: hidden;
-    
+    width: 90%; /* Adjust width for mobile screens */
 }
-#display{
-    width:100%;
+
+#display {
+    width: 100%;
     padding: 20px;
-    font-size: 5rem;
+    font-size: 3rem; /* Adjust font size for mobile screens */
     border: none;
     text-align: left;
     background-color: hsl(0, 0%, 20%);
     color: white;
-
-
 }
-#keys{
+
+#keys {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
 }
-button{
-    height: 100px;
-    width: 100px;
+
+button {
+    height: 80px; /* Adjust button size for mobile screens */
+    width: 80px; /* Adjust button size for mobile screens */
     border-radius: 50px;
-    border:none;
+    border: none;
     background-color: hsl(0, 0%, 30%);
     color: white;
-    font-size: 3rem;
+    font-size: 2rem; /* Adjust font size for mobile screens */
     font-weight: bold;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: hsl(0, 0%, 40%);
-
 }
-button:active{
+
+button:active {
     background-color: hsl(0, 0%, 50%);
-
 }
-.operator-btn{
+
+.operator-btn {
     background-color: hsl(271, 48%, 55%);
-
 }
-.operator-btn:hover{
+
+.operator-btn:hover {
     background-color: hsl(298, 52%, 64%);
 }
-.operator-btn:active{
+
+.operator-btn:active {
     background-color: hsl(298, 52%, 74%);
+}
 
+@media screen and (min-width: 400px) {
+    #display {
+        font-size: 5rem; /* Larger font size for larger screens */
+    }
 
+    button {
+        height: 100px; /* Larger button size for larger screens */
+        width: 100px; /* Larger button size for larger screens */
+        font-size: 3rem; /* Larger font size for larger screens */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #calculator {
+        width: 70%; /* Adjust width for tablets */
+    }
+
+    #display {
+        font-size: 4rem; /* Adjust font size for tablets */
+    }
+
+    button {
+        height: 90px; /* Adjust button size for tablets */
+        width: 90px; /* Adjust button size for tablets */
+        font-size: 2.5rem; /* Adjust font size for tablets */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #calculator {
+        width: 50%; /* Adjust width for desktops */
+    }
+
+    #display {
+        font-size: 5rem; /* Adjust font size for desktops */
+    }
+
+    button {
+        height: 100px; /* Adjust button size for desktops */
+        width: 100px; /* Adjust button size for desktops */
+        font-size: 3rem; /* Adjust font size for desktops */
+    }
 }
