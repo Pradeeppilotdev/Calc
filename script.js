@@ -30,7 +30,7 @@ function ClearDisplay(){
 
 function Calculate(){
     try{
-        display.value = eval(display.value);
+        display.value = eval(display.value).toFixed(6);
     }
     catch{
         display.value = "Oops Error"
