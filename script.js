@@ -15,6 +15,9 @@ function appendToDisplay(input){
     if (operators.includes(input) && operators.includes(lastChar)) {
         return; // Do not append if the last character is also an operator
     }
+    if ((display.value == "Oops Error") && ((operators.includes(input)) || (display.includes(input)) || (multiply.includes(input)))){
+        ClearDisplay()
+    }
 
     display.value += input;
 }
@@ -32,5 +35,5 @@ function Calculate(){
     catch{
         display.value = "Oops Error"
     }
-
+    
 }
