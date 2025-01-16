@@ -16,7 +16,7 @@ function appendToDisplay(input){
         return; // Do not append if the last character is also an operator
     }
     if ((display.value == "Oops Error") && ((operators.includes(input)) || (display.includes(input)) || (multiply.includes(input)))){
-        ClearDisplay()
+        return // This returns the entered in the display if we try to enter anything after the error
     }
 
     display.value += input;
