@@ -64,7 +64,7 @@ button:active {
 .operator-btn:active {
     background-color: hsl(298, 52%, 74%);
 }
-
+/*For mobile devices and other kinda small devices*/
 @media screen and (max-width: 600px) {
     #calculator {
         width: 95%;
