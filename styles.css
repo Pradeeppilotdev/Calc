@@ -13,13 +13,13 @@ body {
     border-radius: 20px;
     max-width: 500px;
     overflow: hidden;
-    width: 90%; /* Adjust width for mobile screens */
+    width: 100%; 
 }
 
 #display {
     width: 100%;
     padding: 20px;
-    font-size: 3rem; /* Adjust font size for mobile screens */
+    font-size: 5rem; 
     border: none;
     text-align: left;
     background-color: hsl(0, 0%, 20%);
@@ -34,13 +34,13 @@ body {
 }
 
 button {
-    height: 80px; /* Adjust button size for mobile screens */
-    width: 80px; /* Adjust button size for mobile screens */
+    height: 100px;
+    width: 100px; 
     border-radius: 50px;
     border: none;
     background-color: hsl(0, 0%, 30%);
     color: white;
-    font-size: 2rem; /* Adjust font size for mobile screens */
+    font-size: 3rem; 
     font-weight: bold;
     cursor: pointer;
 }
@@ -65,46 +65,16 @@ button:active {
     background-color: hsl(298, 52%, 74%);
 }
 
-@media screen and (min-width: 400px) {
-    #display {
-        font-size: 5rem; /* Larger font size for larger screens */
-    }
-
-    button {
-        height: 100px; /* Larger button size for larger screens */
-        width: 100px; /* Larger button size for larger screens */
-        font-size: 3rem; /* Larger font size for larger screens */
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 600px) {
     #calculator {
-        width: 70%; /* Adjust width for tablets */
+        width: 70%;
     }
-
     #display {
-        font-size: 4rem; /* Adjust font size for tablets */
+        font-size: 2rem;
     }
-
     button {
-        height: 90px; /* Adjust button size for tablets */
-        width: 90px; /* Adjust button size for tablets */
-        font-size: 2.5rem; /* Adjust font size for tablets */
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    #calculator {
-        width: 50%; /* Adjust width for desktops */
-    }
-
-    #display {
-        font-size: 5rem; /* Adjust font size for desktops */
-    }
-
-    button {
-        height: 100px; /* Adjust button size for desktops */
-        width: 100px; /* Adjust button size for desktops */
-        font-size: 3rem; /* Adjust font size for desktops */
+        height: 40px;
+        width: 40px;
+        font-size: 1.5rem;
     }
 }

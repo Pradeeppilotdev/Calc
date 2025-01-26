@@ -16,7 +16,13 @@ function appendToDisplay(input){
         return; // Do not append if the last character is also an operator
     }
     if ((display.value == "Oops Error") && ((operators.includes(input)) || (display.includes(input)) || (multiply.includes(input)))){
-        return // This returns the entered in the display if we try to enter anything after the error
+        return; // This returns the value entered in the display if we try to enter anything after the error
+    }
+    if (operators.includes(last2char[0]) && multiply.includes(last2char[1])){
+        return;
+    }
+    if (multiply.includes(last2char[0]) && operators.includes(last2char[1]) ){
+        return;
     }
 
     display.value += input;
